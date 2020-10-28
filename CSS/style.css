@@ -1,0 +1,182 @@
+body
+{
+margin:0;
+text-align: center;
+font-family: 'Merriweather', serif; /*agar Merriweather ni chali soo serif*/
+color: #40514E;
+}
+h1
+{
+  /* width: 10%;
+  margin: 0 auto 0 auto; */
+  font-family: 'Sacramento', cursive;
+   margin: 50px auto 0 auto; /* top, right,bottom, left */
+  font-size: 5.625rem;
+  color:  #66BFBF;
+  line-height: 2;
+  /*dekho px usse kia toh vo static hai mtlb agar humne browser ko zoom in zoom out kia toh size of h1 remains static mtlb utna soo
+  we use "em or %" to do this mtlb zoom in and zoom out pe dynamic apne app sahi size par ek dikkat haii "em aur % "ke sath ki vo agar parent
+  mtlb agar parent body mai bhi font-size hai aur h1 pe  bhi toh add krdega pixel vo add ni krega bss yh dikkat toh isko bhi resolve by
+  using rem(root) isse fyada dynamic to sizes and parent vaale size ko add nhii,,
+  1em = 16px = 100%
+  100% = 16px we need 90px so 90px/16=562.5*/
+}
+p
+{
+  line-height: 2;
+}
+.prog
+{
+  font-weight: normal;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.53rem;
+  /* font-size: 40px; */
+  color:  #66BFBF;
+  padding-bottom: 10px;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color : #11999E;
+
+}
+.pro
+{
+  text-decoration: underline;
+}
+.intro
+{
+  width:30%;
+  margin: auto;
+}
+.top-container
+{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container
+{
+  margin: 100px auto; /*100 top-bottom and left-right auto*/
+}
+.bottom-container
+{
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+
+
+}
+hr{
+  border: dotted #EAF6F6 6px ;
+  border-bottom: none;
+  width:4%;
+ margin: 100px auto; 
+}
+
+.top-cloud
+{
+  position: absolute; /*parent se 300px jo ki kon haii top-container kyuki usko relative kia hai toh usse relation...*/
+  right: 300px;
+  top:40px;
+}
+.bottom-cloud
+{
+  position: absolute; /*parent se 300px jo ki kon haii top-container kyuki usko relative kia hai toh usse relation...*/
+  left: 250px;
+  bottom: 300px;
+}
+a{
+  color : #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+   
+}
+a:hover
+{
+color: #eaf6f6;
+}
+.skill-row
+{
+  width: 50%;
+  /* margin:auto  ; */
+  /* center ke sath margin bhi deni hai sooo */
+  margin: 100px auto 100px auto;
+  text-align: left;
+
+
+}
+.computer
+{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+.flutter
+{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+/* foe clearing the left and right  
+ .code-skill-description
+{
+  clear: left;
+}
+ 
+.main-skill-description
+{
+  clear: right;
+}  */
+.content-message
+{
+  width: 40%;
+  margin: 40px auto 60px; /*40 top auto left and right and 60 in bottom*/
+}
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+  background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 40px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.click me:hover {
+  border: solid #337FE7 1px;
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.copyright
+{
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
